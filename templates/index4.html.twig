@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Shopping</title>
+</head>
+<body>
+
+
+	{% block jacob %}
+	<ul>	
+		{%  for a  in  results %}
+
+			<li>{{ a.name | lower }}</li>
+
+		{% endfor  %}
+	</ul>
+	{% endblock %}
+
+	{{ block('jacob') }}
+	
+</body>
+</html>
